@@ -61,7 +61,7 @@ body {
   gap: 4px;
   text-decoration: none;
   text-transform: none;          /* preserve case */
-  line-height: 1.15;             /* prevents clipping of descenders */
+  line-height: 1.35;             /* prevents clipping of descenders */
 }
 
 /* keeps stage + :zero on one line */
