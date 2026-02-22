@@ -1,5 +1,6 @@
 import './globals.css'
 import { Manrope } from 'next/font/google'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const manrope = Manrope({
   subsets: ['latin'],
