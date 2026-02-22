@@ -1,4 +1,5 @@
 import './globals.css'
+import Link from 'next/link'
 import { Manrope } from 'next/font/google'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
@@ -15,15 +16,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={manrope.className}>
         <header className="site-header">
           <div className="container header-inner">
-            <a href="/" className="brand">stage:zero</a>
+            <Link href="/" className="brand">stage:zero</Link>
             <nav className="nav">
-              <a href="/#about">About</a>
-              <a href="/auditions">Auditions</a>
-              <a href="/contact">Contact</a>
-              <a href="/admin">Admin</a>
+              <Link href="/#about">About</Link>
+              <Link href="/roles">Roles</Link>
+              <Link href="/auditions">Auditions</Link>
+              <Link href="/contact">Contact</Link>
             </nav>
           </div>
         </header>
@@ -33,9 +34,11 @@ export default function RootLayout({ children }) {
         <footer className="site-footer">
           <div className="container">
             <p>© {new Date().getFullYear()} stage:zero</p>
-            <p><small>Contact: <a href="/contact">Contact form</a></small></p>
+            <p><small>Contact: <Link href="/contact">Contact form</Link></small></p>
           </div>
         </footer>
+
+        <SpeedInsights />
       </body>
     </html>
   )
