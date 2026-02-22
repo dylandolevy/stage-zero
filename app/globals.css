@@ -236,17 +236,28 @@ textarea {
   font-weight: 800;
   font-size: 1.05rem;
   letter-spacing: -0.02em;
-  background: linear-gradient(90deg, #ff7ab6 0%, #7cc4ff 60%);
+
+  background: linear-gradient(
+    90deg,
+    #c9b37e 0%,      /* soft gold */
+    #e6dcc6 35%,     /* champagne highlight */
+    #bfa76a 65%,     /* muted gold */
+    #8f7a4f 100%     /* darker bronze */
+  );
+
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+
+  text-shadow: 0 2px 12px rgba(0,0,0,0.05);
 }
 
 .brand-main {
   font-weight: 800;
   font-size: 1.05rem;
-  color: #000; /* solid black */
+  color: #000;
 }
+
 .brand-tag {
   display: block;
   font-size: 10.5px;
