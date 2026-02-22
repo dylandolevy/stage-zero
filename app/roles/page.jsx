@@ -85,7 +85,9 @@ export default function RolesPage() {
                   )}
 
                   <div style={{ marginTop: 12 }}>
-                    <a href="/auditions"><button>Apply</button></a>
+                    <a href="/auditions">
+                        <button className="apply-btn">Apply</button>
+                    </a>
                     <a href="/contact" style={{ marginLeft: 12, color: 'var(--muted)' }}>Ask about role</a>
                   </div>
                 </div>

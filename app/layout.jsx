@@ -21,8 +21,8 @@ export default function RootLayout({ children }) {
         <header className="site-header brandy-header">
           <div className="container header-inner">
             <Link href="/" className="brand">
-              <span className="brand-accent">stage</span>:<span className="brand-main">zero</span>
-              <small className="brand-tag">idols & entertainment</small>
+              <span className="brand-accent">stage:zero</span>
+              <small className="brand-tag">idols at duke</small>
             </Link>
 
             <nav className="nav" aria-label="Primary">
