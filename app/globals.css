@@ -231,7 +231,7 @@ textarea {
   flex-direction: column;        /* title on top, tagline underneath */
   gap: 4px;
   text-decoration: none;
-  line-height: 1;
+  line-height: 1.5;
   text-transform: none;          /* preserve lowercase stage:zero */
 }
 
