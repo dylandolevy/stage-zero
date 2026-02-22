@@ -1,3 +1,4 @@
+// app/layout.jsx
 import './globals.css'
 import Link from 'next/link'
 import { Manrope } from 'next/font/google'
@@ -17,14 +18,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={manrope.className}>
-        <header className="site-header">
+        <header className="site-header brandy-header">
           <div className="container header-inner">
-            <Link href="/" className="brand">stage:zero</Link>
-            <nav className="nav">
-              <Link href="/#about">About</Link>
-              <Link href="/roles">Roles</Link>
-              <Link href="/auditions">Auditions</Link>
-              <Link href="/contact">Contact</Link>
+            <Link href="/" className="brand">
+              <span className="brand-accent">stage</span>:<span className="brand-main">zero</span>
+              <small className="brand-tag">idols & entertainment</small>
+            </Link>
+
+            <nav className="nav" aria-label="Primary">
+              <Link href="/#about" className="nav-link">About</Link>
+              <Link href="/roles" className="nav-link">Roles</Link>
+              <Link href="/auditions" className="nav-link">Auditions</Link>
+              <Link href="/contact" className="nav-link">Contact</Link>
             </nav>
           </div>
         </header>

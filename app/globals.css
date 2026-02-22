@@ -212,3 +212,145 @@ textarea {
 /* small adjustments for headings inside cards */
 .role-card h3 { margin-bottom: 4px; font-size: 1.05rem; }
 .role-card p { margin: 0.6rem 0 0; font-size: 0.95rem; line-height: 1.4; }
+
+/* ---------- Header / Brand (entertainment look) ---------- */
+.brandy-header {
+  background: linear-gradient(180deg, rgba(3,7,18,0.02), rgba(255,255,255,0.00));
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(15,23,42,0.04);
+  padding: 14px 0;
+  position: sticky;
+  top: 0;
+  z-index: 60;
+}
+
+/* Brand styling */
+.brand {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+  text-decoration: none;
+  line-height: 1;
+}
+.brand-accent {
+  font-weight: 800;
+  color: var(--brand-color);
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+  background: linear-gradient(90deg, #ff7ab6 0%, #7cc4ff 60%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 2px 12px rgba(124,196,255,0.08);
+}
+.brand-main {
+  font-weight: 700;
+  color: var(--brand-color);
+  margin-left: 2px;
+  font-size: 1rem;
+}
+.brand-tag {
+  display: block;
+  font-size: 10.5px;
+  color: var(--muted);
+  font-weight: 500;
+  margin-top: 4px;
+  opacity: 0.95;
+}
+
+/* Header layout tweaks */
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+/* Nav layout */
+.nav {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+/* Nav link base style */
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 600;
+  padding: 8px 4px;
+  border-radius: 6px;
+  transition: color 180ms ease, transform 180ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hover / focus: lift + color */
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--brand-color);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+/* Underline animation using pseudo element */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  bottom: 6px;
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(90deg, #ff7ab6, #7cc4ff);
+  border-radius: 6px;
+  transition: transform 260ms cubic-bezier(.2,.9,.2,1);
+  transform-origin: center;
+  opacity: 0.98;
+}
+
+/* On hover/focus, expand underline */
+.nav-link:hover::after,
+.nav-link:focus::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Active page indicator (optional if you want to set .active manually via code) */
+.nav-link.active {
+  color: var(--brand-color);
+}
+.nav-link.active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Small screens: collapse spacing a bit */
+@media (max-width: 700px) {
+  .nav { gap: 12px; }
+  .brand-accent { font-size: 1rem; }
+  .brand-main { font-size: 0.95rem; }
+  .header-inner { padding: 6px 0; }
+}
+
+/* subtle shadow under header */
+.site-header {
+  box-shadow: 0 4px 14px rgba(10,12,20,0.02);
+}
+
+/* refine button colors across site to match brand */
+button {
+  background: linear-gradient(90deg, #0070f3 0%, #4fb3ff 100%);
+  box-shadow: 0 8px 22px rgba(4, 27, 76, 0.08);
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* small accessibility improvement for keyboard users */
+.nav-link:focus-visible {
+  outline: 3px solid rgba(0,112,243,0.12);
+  outline-offset: 4px;
+  border-radius: 6px;
+}
