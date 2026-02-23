@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
             <Link href="/" className="brand">
               <span className="brand-title">
               <span className="brand-accent">stage</span>
+              <span className="brand-main">:</span>
               <span className="brand-main">:zero</span>
             </span>
               <small className="brand-tag">idols at duke</small>
