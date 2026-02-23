@@ -30,7 +30,7 @@ export default function HomePage() {
             <div>
               <h3 style={{ margin: '8px 0' }}>Our focus</h3>
               <ul>
-                <li>Train & develop two idol groups per year — one girl group, one boy group</li>
+                <li>Train & develop idol groups each academic year (number varies by audition count)</li>
                 <li>Produce performance videos, studio recordings, and ticketed shows</li>
                 <li>Deliver media training, choreography, vocal coaching, and styling</li>
               </ul>
@@ -40,7 +40,7 @@ export default function HomePage() {
               <h3 style={{ margin: '8px 0' }}>Why it matters</h3>
               <p style={{ margin: 0 }}>
                 Campus groups often split singing and dancing across separate clubs. stage:zero combines both,
-                giving members a rare opportunity to build portfolio-ready performance clips, ­develop stagecraft,
+                giving members an opportunity to build portfolio-ready performance clips, ­develop stagecraft,
                 and learn how a modern idol project is made.
               </p>
             </div>
@@ -55,7 +55,7 @@ export default function HomePage() {
             <article style={{ padding: 12, border: '1px solid #eee', borderRadius: 8 }}>
               <h4 style={{ marginTop: 0 }}>Recruitment</h4>
               <p style={{ margin: 0 }}>
-                Two groups are recruited each academic year (one girl group, one boy group). Auditions
+                Groups are recruited each academic year. Auditions
                 are open to all Duke undergrad and grad students. No prior idol experience required.
               </p>
             </article>
@@ -64,7 +64,7 @@ export default function HomePage() {
               <h4 style={{ marginTop: 0 }}>Training</h4>
               <p style={{ margin: 0 }}>
                 Weekly rehearsals, dance bootcamps, vocal coaching, and media workshops. Training is
-                hands-on and performance-driven — you meet like an idol unit, you perform like one.
+                hands-on and performance-driven.
               </p>
             </article>
 
@@ -72,7 +72,7 @@ export default function HomePage() {
               <h4 style={{ marginTop: 0 }}>Production</h4>
               <p style={{ margin: 0 }}>
                 We film performance videos, record covers & originals, and run ticketed campus shows.
-                Expect collaboration with stylists, lyricists, photographers, and video editors.
+                
               </p>
             </article>
           </div>
@@ -93,7 +93,7 @@ export default function HomePage() {
           </ul>
 
           <p style={{ margin: 0, color: '#666' }}>
-            Leadership is student-run (President, Treasurer, etc.). Teams are open to contributors —
+            Leadership is student-run. Teams are open to contributors meaning
             you don’t need to be on-stage to shape the group.
           </p>
         </section>
@@ -102,15 +102,13 @@ export default function HomePage() {
         <section id="cycle" style={{ display: 'grid', gap: 12 }}>
           <h2 style={{ margin: 0, fontSize: 24 }}>Audition & season snapshot</h2>
           <ol style={{ marginTop: 8 }}>
-            <li><strong>Auditions:</strong> Announced at start of semester — open applications and live callbacks.</li>
-            <li><strong>Selection:</strong> Two groups formed (girl group / boy group).</li>
+            <li><strong>Auditions:</strong> Announced at start of academic year — open applications and live callbacks.</li>
+            <li><strong>Selection:</strong> Groups formed.</li>
             <li><strong>Training Phase:</strong> Weekly rehearsals + bootcamps for 6–8 weeks.</li>
-            <li><strong>Showcase Season:</strong> Multiple campus shows, filmed performance videos, and at least one ticketed concert.</li>
+            <li><strong>Showcase Season:</strong> Multiple campus shows, filmed performance videos, and at least one ticketed event.</li>
           </ol>
 
-          <p style={{ margin: 0, color: '#666' }}>
-            (We’re a new org — first cohort launching this academic year. Expect growth and more formalized stats after our first season.)
-          </p>
+          
         </section>
 
         {/* EVENTS */}
@@ -138,8 +136,6 @@ export default function HomePage() {
         {/* FOOTER / QUICK FACTS */}
         <footer style={{ paddingTop: 6, color: '#666', fontSize: 14 }}>
           <div style={{ display: 'flex', gap: 18, flexWrap: 'wrap' }}>
-            <div><strong>Inspiration:</strong> K-pop & contemporary idol culture</div>
-            <div><strong>Recruitment:</strong> 2 groups / year</div>
             <div><strong>Open to:</strong> Duke undergrads & grads</div>
           </div>
         </footer>

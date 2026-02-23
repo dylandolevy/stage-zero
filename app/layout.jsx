@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
               <span className="brand-title">
               <span className="brand-accent">stage</span>
               <span className="brand-main">:</span>
-              <span className="brand-main">:zero</span>
+              <span className="brand-main">zero</span>
             </span>
               <small className="brand-tag">idols at duke</small>
             </Link>
